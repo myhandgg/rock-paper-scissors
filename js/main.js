@@ -93,6 +93,7 @@ function random() {
             score.textContent = +score.textContent - 1
             window.localStorage.setItem("score" , score.textContent)
             if (score.textContent < 0) {
+                window.localStorage.setItem("score" , 0)
                 score.textContent = 0
             }
         }
