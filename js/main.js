@@ -74,7 +74,7 @@ function random() {
         computerPick.style.borderColor = "rgb(72,101,244)"
     } else if (computerPick.src === "http://127.0.0.1:5500/images/icon-scissors.svg") {
         computerPick.style.borderColor = "rgb(236,158,14)"
-    } else if (computerPick.src === "http://127.0.0.1:5500/images/icon-scissors.svg") {
+    } else {
         computerPick.style.borderColor = "rgb(220,46,78)"
     }
     setTimeout(() => {
