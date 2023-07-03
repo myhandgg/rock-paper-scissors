@@ -70,16 +70,16 @@ function random() {
     computerPick.style.borderWidth = "20px"
     computerPick.style.borderStyle = "solid"
     // making border for computer pick
-    if (computerPick.src === "http://127.0.0.1:5500/images/icon-paper.svg") {
+    if (computerPick.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-paper.svg") {
         computerPick.style.borderColor = "rgb(72,101,244)"
-    } else if (computerPick.src === "http://127.0.0.1:5500/images/icon-scissors.svg") {
+    } else if (computerPick.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-scissors.svg") {
         computerPick.style.borderColor = "rgb(236,158,14)"
     } else {
         computerPick.style.borderColor = "rgb(220,46,78)"
     }
     setTimeout(() => {
         win.style.display = "block"
-        if (yourPickedImg.src === "http://127.0.0.1:5500/images/icon-paper.svg" && computerPick.src === "http://127.0.0.1:5500/images/icon-rock.svg" || yourPickedImg.src === "http://127.0.0.1:5500/images/icon-scissors.svg" && computerPick.src === "http://127.0.0.1:5500/images/icon-paper.svg" || yourPickedImg.src === "http://127.0.0.1:5500/images/icon-rock.svg" && computerPick.src === "http://127.0.0.1:5500/images/icon-scissors.svg") {
+        if (yourPickedImg.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-paper.svg" && computerPick.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-rock.svg" || yourPickedImg.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-scissors.svg" && computerPick.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-paper.svg" || yourPickedImg.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-rock.svg" && computerPick.src === "https://myhandgg.github.io/rock-paper-scissors/images/icon-scissors.svg") {
             yourPickedImg.style.animation = "spread 1s infinite"
             score.textContent = +score.textContent + 1
             winText.textContent = "you win"
